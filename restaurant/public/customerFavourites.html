@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+    <link ref="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="customerFavourites.js"></script>
+    
+  
+    <title>Customer favourites</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body onload="getProfile()">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a id="easybites" class="navbar-brand col-sm-3 col-md-2 mr-0" href="customerDashboard.html" >EasyBites</a>
+      
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="index.html">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tabs</span>
+               <a class="d-flex align-items-center text-muted" href="#">
+                 <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a id="profilebtn" class="nav-link" href="customerProfile.html">
+                  Profile <span class="sr-only">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="favs">
+                  <span data-feather="file"></span>
+                  Favourites
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a id="historybtn" class="nav-link" href="customerHistory.html">
+                  <span data-feather="shopping-cart"></span>
+                  Current Orders
+                </a>
+            </li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h2">Favourite Searches</h1>
+            
+            <div class="btn-toolbar mb-2 mb-md-0">
+              
+            
+            </div>
+          </div>
+ 
+    </div>
+          
+	 <div class="window" id="custOrder">
+		<form id="add" method="post">
+			<fieldset>
+				  <legend><h2>Search:</h2></legend>
+				  Restaurants:
+				  <select id="restSelect" name="Restaurants">
+					  <option id="hakata" value=100>Hakata Ramen</option>
+					  <option id="queen" value="110">Queen Margherita Pizza</option>
+				  </select> <button id="go" type="button" style="border-radius: 20%;font-size: 11px;";>Go</button><hr>
+				  <div id=menu style ="display:none">
+			  		<h2>Menu:</h2>
+				  	<div><p id="menuArea"></p></div>
+					<br>
+					<h2>Information:</h2>
+					  
+					  <br>
+					  Group Size:
+					  <select id="groupSize" name="groupSize">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6">6</option>
+						  <option value="7">7</option>
+					  </select> 
+		      			<br><br>
+					  
+					<button type="submit" value="Submit">Submit</button>
+				  	<button type="reset" value="Reset">Reset</button>
+       			 </div>
+			</fieldset>
+      </form>
+      </div>
+      </main>
+      </div>
+    </div>
+
+  </body>
+</html>

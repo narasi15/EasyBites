@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	  <script src="./restaurantDashboard.js"></script>
+	  <script src="./js/orderQueue.js"></script>
+    <title>Restaurant Dashboard</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="restaurantDashboard.html" >EasyBites</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a id="stuff" class="nav-link"></a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="index.html">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tabs</span>
+               <a class="d-flex align-items-center text-muted" href="#">
+                 <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" id="orderQueue" href="#">
+                  <span data-feather="home"></span>
+                  Order Queue <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profit" href="#">
+                  <span data-feather="file"></span>
+                  Profits
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="phone" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Phone Reservation
+                </a>
+            </li>
+            </ul>
+          </div>
+        </nav>
+
+       </div> 
+      </div>
+    <div class= "window" id="dashBoard"><h1>Restaurant Dashboard</h1></div>
+    <div class="window" id="queue"  style ="display: none">
+		<h1>Orders</h1><hr>
+		
+		<ol id="orderList">
+		    
+		</ol>
+		
+		
+		<h2>Completed Orders</h2><br>
+		<form id="removeOrder" method="post" autocomplete="off">
+		    <label>
+		        <span class="label"><h6>Order Number Fulfilled:</h6></span>
+		        <input type="text" id="removeNum" name="number"></input>
+		        <input  value="Submit" id="rmButton" type="submit">
+		    </label>
+		</form>
+    </div>
+    <div class="window" id="profits" style ="display:none">
+    	<img src="/img/profits.gif" alt="Profits" display="block" margin-left="auto"  margin-right="auto"height="400" width="500"><br><br>
+    	<h2 style="text-align:left">Profits:  Not Yet Implemented</h2>
+    </div>
+    
+    <div class="window" id="reserve" style ="display:none">
+      <h1 style="text-align:left">Phone Reservations</h1><hr>
+      <form id="add" method="post">
+          <fieldset>
+              <legend><h2>Information:</h2></legend>
+          First name:
+          <input type="text" id="custID" value="">
+          <br><br>
+          Group Size:
+          <select id="groupSize" name="groupSize">
+              <option value=1>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+          </select> 
+          <br><br><br>
+          <h2>Menu:</h2>
+          <div ><p id="menuArea">Test</p></div>
+        </fieldset>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+      </form> 
+    </div>
+    
+  </body>
+</html>

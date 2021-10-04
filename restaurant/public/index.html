@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico">
+    <title>EasyBites</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="navbar-collapse collapse w-20 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="concept" href="#row">Concept</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id ="about" href="#row">About us</a>
+                    </li>
+        
+                    <!-- Dropdown Button-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Search</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" id="toronto" href="#">Toronto </a>
+                            <a class="dropdown-item" id="montreal" href="#">Montreal</a>
+                            <a class="dropdown-item" id="vancouver" href="#">Vancouver</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" style="color:white; font-family: 'Sofia';font-size: 2.5em;" href="#">EasyBites</a>
+                <img src="img/logo.png" width="40" height="40"/>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-20 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                            <a href="signup.html" class="btn btn-outline-secondary">Sign-Up</a>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="nav-item">
+                            <a href="login.html" class="btn btn-outline-secondary">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+</header>
+
+<div id="topImages" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#topImages" data-slide-to="0" class="active"></li>
+        <li data-target="#topImages" data-slide-to="1"></li>
+        <li data-target="#topImages" data-slide-to="2"></li>
+        <li data-target="#topImages" data-slide-to="3"></li>
+    </ol>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/carouselhome1.jpg" alt="home">
+            <div class="carousel-caption">
+                <h1 class="text-left"><strong></strong></h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-caption">
+                <h1><strong>Quick and easy to use!</strong></h1>
+            </div>
+            <img src="img/carouselpic1.jpg" alt="order">
+        </div>
+        <div class="carousel-item">
+            <img src="img/carouselpic2.jpg" alt="eat">
+            <div class="carousel-caption">
+                <h1><strong>Lunch breaks made easy!</strong></h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/carouselpic3.jpg" alt="serve">
+            <div class="carousel-caption">
+                <h1><strong>Get food fast without having fast food!</strong></h1>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#topImages" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#topImages" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<!-- place holder for views -->
+<div id='hold' style="display: none"></div>
+
+<!-- "display: none" hides container from View and inserted into <div id='hold'> to show -->
+<div class="container about" id="aboutus" style="display: none">
+<!-- Three columns of text -->
+    <div id="we">
+        <h1 class="cover-heading">Who we are</h1>
+        
+        <p class="lead">This project was put together by two students at the University of Toronto, for the CSC309 course. If you see any of them on campus, feel free to offer some coffee, we can ALWAYS use some!</p>
+        
+        <p class="lead"> This program was created using tools like BootStrap to design the HTML and CSS files. The Zomato API was used to retrieve data about cities and places to eat.</p>
+        
+        <p class="lead"> Creators: Thanin Chan, Priyanka Narasimhan</p>
+        <p class="lead"> Last Updated: March 25, 2018</p>
+        <br>
+        <section id="contact" class="page">
+            <div class="border"></div>
+            <p><br>EasyBites<a href="mailto:easybites@mail.com">@mail.com</a><br>40 St.George Street
+            <br>Toronto, Ontario, Canada<br>M9V 4N9<br>Phone: (416)874-8888</p>
+            <br>
+            <div class="border"></div>
+        </section>
+    </div>
+
+</div> <!-- /.container -->
+</div>
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<!-- "display: none" hides container from View and inserted into <div id='hold'> to show -->
+<div class="container marketing" id="market" style="display: none">
+
+<!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="img/order.jpg" width="50" height="50">
+            <h2>Order</h2>
+            <p>Don't wait for the waiter to bring you a menu. Search for your restaurant, place your order, pay securely online and receive your confirmation and service time.</p>
+            <br>
+        </div><!-- /.col-lg-4 -->
+       
+        <div class="col-lg-4">
+            <img src="img/sit.png" width="50" height="50">
+            <h2>Sit</h2>
+            <p>When you arrive. There's no long lines or waiting list to sign. Just provide your confirmation information and you'll be seated immediately.</p>
+            <br>
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-lg-4">
+            <img src="img/eat.jpg" width="50" height="50">
+            <h2>Eat</h2>
+            <p>The restaurants start preparing your meal immediately after you order so when you get to your table, your food is hot and ready.
+            No waiting!</p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div> <!-- /.container -->
+
+<div id="holder" style="display: none"></div>
+    <div id="dtable" style="display: none">
+        <div class="container">
+            <h2 id="resto">Restaurants</h2>
+            <table id="datatable" class="display" width="100%" cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Wait Times</th>
+                    <th>Rating</th>
+                    <th>Restaurant</th>
+                    <th>Cuisine</th>
+                    <th>Price($1-5)</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Wait Times</th>
+                    <th>Rating</th>
+                    <th>Restaurant</th>
+                    <th>Cuisine</th>
+                    <th>Price($1-5)</th>
+                    <th>Location</th>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+ <!-- The following will be for info to add later to homepage-->
+        
+<div class="container">
+    <div class="card-deck mb-3 text-center" id="signinfo" style="display: true">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Sign Up</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <p>Sign up with us today for free to make online orders!
+                    You will be required to enter your credit card information when signing up.</p>
+                    <li><img src="img/payment.jpeg" width="200" height="100"></li>
+                </ul>
+                <a href="signup.html" class="btn btn-lg btn-block btn-primary">Sign up for free</a>
+            </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Search</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                    <p>Make a search and choose a restaurant. You must sign up to be able to perform a full search, else you will be limited to three cities. You will be able to view the menu and pricings to your order. You can also select whether you want to dine, order takeout and your pickup time.</p>
+                    <li><img src="img/menuchecklist.jpg" width="200" height="150"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Payment</h4>
+            </div>
+        <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+                <p>Quick and easy payment through online! Remember, you will also be charged if you make an order and do not show up within your suggested time frame! </p>
+                <li><h1 class="card-title pricing-card-title">$ <small class="text-muted"></small></h1></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section id="end" class="page">   </section>
+
+<section id="contact" class="page">
+
+
+<!-- FOOTER -->
+<footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p class="position-bottom">&copy; 2017-2018 EasyBites, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+</main>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https:///cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="js/script.js?v=1.0"></script>
+</body>
+</html>

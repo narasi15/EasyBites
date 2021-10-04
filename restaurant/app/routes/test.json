@@ -1,0 +1,142 @@
+{
+    "_id": {
+        "$oid": "5abe9df82fdcf1b0172eb82e"
+    },
+    "name": "Queen Margherita Pizza",
+    "restID": 110,
+    "menu": [
+        {
+            "category": "Pizza",
+            "items": [
+                {
+                    "price": 15,
+                    "item": "Margherita"
+                },
+                {
+                    "price": 18,
+                    "item": "Diavola"
+                },
+                {
+                    "price": 19,
+                    "item": "Calabrese"
+                },
+                {
+                    "price": 20,
+                    "item": "Gio Oldschool"
+                }
+            ]
+        },
+        {
+            "category": "Side Orders",
+            "items": [
+                {
+                    "price": 6,
+                    "item": "Marinated Olives"
+                },
+                {
+                    "price": 13,
+                    "item": "Fried Calamari"
+                },
+                {
+                    "price": 7,
+                    "item": "Spicy Cacciatore"
+                },
+                {
+                    "price": 10,
+                    "item": "Meatballs"
+                }
+            ]
+        },
+        {
+            "category": "Drinks",
+            "items": [
+                {
+                    "price": 6,
+                    "item": "Red Wine"
+                },
+                {
+                    "price": 6,
+                    "item": "White Wine"
+                },
+                {
+                    "price": 2,
+                    "item": "Carbonated Water"
+                },
+                {
+                    "price": 5,
+                    "item": "Beer"
+                }
+            ]
+        }
+    ],
+    "orders": [
+        {
+            "custID": "Fred",
+            "orderID": 321,
+            "groupSize": 1,
+            "table": 3,
+            "order": [
+                {
+                    "quantity": 1,
+                    "item": "Margherita"
+                },
+                {
+                    "quantity": 1,
+                    "item": "Marinated Olives"
+                },
+                {
+                    "quantity": 1,
+                    "item": "Beer"
+                }
+            ]
+        },
+        {
+            "custID": "Yandell",
+            "orderID": 421,
+            "groupSize": 2,
+            "table": 19,
+            "order": [
+                {
+                    "quantity": 2,
+                    "item": "Calabrese"
+                },
+                {
+                    "quantity": 1,
+                    "item": "Red Wine"
+                },
+                {
+                    "quantity": 1,
+                    "item": "Beer"
+                },
+                {
+                    "quantity": 1,
+                    "item": "Fried Calamari"
+                }
+            ]
+        },
+        {
+            "custID": "Athena",
+            "orderID": 129,
+            "groupSize": 4,
+            "table": 23,
+            "order": [
+                {
+                    "quantity": 2,
+                    "item": "Margherita"
+                },
+                {
+                    "quantity": 3,
+                    "item": "Carbonated Water"
+                },
+                {
+                    "quantity": 2,
+                    "item": "Marinated Olives"
+                },
+                {
+                    "quantity": 2,
+                    "item": "Diavola"
+                }
+            ]
+        }
+    ]
+}

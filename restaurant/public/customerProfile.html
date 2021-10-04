@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="customerProfile.js"></script>
+
+    
+  
+    <title>Customer profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 750px; /* Should be removed. Only for demonstration */
+
+}
+</style>
+  </head>
+
+  <body onload="getProfile()">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a id="easybites" class="navbar-brand col-sm-3 col-md-2 mr-0" href="customerDashboard.html" >EasyBites</a>
+      
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="index.html">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Tabs</span>
+               <a class="d-flex align-items-center text-muted" href="#">
+                 <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active">
+                  Profile <span class="sr-only">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="favouritesbtn" class="nav-link" href="customerFavourites.html">
+                  <span data-feather="file"></span>
+                  Favourites
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="historybtn" class="nav-link" href="customerHistory.html">
+                  <span data-feather="shopping-cart"></span>
+                  Current Orders
+                </a>
+            </li>
+            </ul>
+          </div>
+
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 class="h2">My Profile</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+
+
+            </div>
+          </div>
+
+          
+
+          <div class="row">
+              <div class="column" style="background-color:#efefe1;">
+                <div class="row">
+              <div id="profile"> </div>
+
+          </div>
+              </div>
+
+              <div class="column" style="background-color:#bbb;">
+            <form id="profiledit">
+                <div>
+              Name:<br>
+              <input id="name" type="text">
+              <br>
+              Email:<br>
+              <input id="email" type="text">
+              <br>
+              
+              Password:<br>
+              <input id="password" type="text">
+              <br>
+              Address:<br>
+              <input id="address" type="text">
+              <br>
+              City:<br>
+              <input id="city" type="text">
+              <br>
+              State:<br>
+              <input id="state" type="text">
+              <br>
+              ZIP:<br>
+              <input id="zip" type="text">
+              <br>
+              Card Name:<br>
+              <input id="cname" type="text">
+              <br>
+              Credit card number:<br>
+              <input id="ccnum" type="text">
+              <br>
+              Exp Month:<br>
+              <input id="expmonth" type="text">
+              <br>
+              Exp Year:<br>
+              <input id="expyear" type="text">
+              <br>
+              CVV:<br>
+              <input id="cvv" type="text">
+              <br><br>
+            </div>
+              <div id="submitbtn"> </div>
+
+              
+          </form>
+              </div>
+          </div>
+
+
+        </main>
+       
+      </div>
+    </div>
+
+  </body>
+</html>
