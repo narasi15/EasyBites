@@ -1,0 +1,32 @@
+Commands:
+
+have node.js installed
+npm init -y
+npm install express
+npm install mongodb
+
+run: node server.js (this one works as of now)
+OR
+run: npm run dev 
+
+it’ll run on localhost:8000
+
+now to run on a server that everyone can access over the internet by typing in url:
+- download ngrok for Mac on ngrok.com/download
+- on this computer the ngrok files are downloaded in a folder called “ngrok folder”
+-  Open one terminal, and cd into the assignment-3-redrum folder
+- run: node server.js
+- open another terminal and cd to the ngrokfolder
+- run: ./ngrok http 8000
+- since 8000 is the port number we chose to run on
+- ngrok will turn terminal black and will give a url to visit that starts with http
+
+
+
+key for 309:  be9c89c9e473dea7d3d67fb029e3be2b
+MongoDB accounts:
+priya94@live.ca, utorid password
+cymann, q2w3e4r5  (this account was used for EasyBites)
+
+google maps: AIzaSyACi_v0gET7ZK1m9g5iM75IUsIjf952ui8
+
