@@ -1,6 +1,4 @@
 # EasyBites
-# Solutions.md
-
 
 ## Group Information
  * Name: redrum
