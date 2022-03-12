@@ -25,7 +25,6 @@ now to run on a server that everyone can access over the internet by typing in u
 
 key for 309:  be9c89c9e473dea7d3d67fb029e3be2b
 MongoDB accounts:
-priya94@live.ca, utorid password
 cymann, q2w3e4r5  (this account was used for EasyBites)
 
 google maps: AIzaSyACi_v0gET7ZK1m9g5iM75IUsIjf952ui8
